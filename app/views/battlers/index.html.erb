@@ -1,0 +1,7 @@
+<h1> Battlers listing page </h1>
+
+<% @battlers.each do |battler|%>
+
+	<p> <%= link_to "#{battler.name}", battler %> </p>
+
+<% end %>

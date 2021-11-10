@@ -1,0 +1,1082 @@
+Started GET "/" for ::1 at 2021-11-10 12:10:43 +0300
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nikita/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nikita/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 42.3ms | Allocations: 518)
+Completed 200 OK in 130ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 4175)
+
+
+Started GET "/" for ::1 at 2021-11-10 12:13:50 +0300
+Processing by PagesController#home as HTML
+Completed 406 Not Acceptable in 6ms (Allocations: 1918)
+
+
+  
+ActionController::MissingExactTemplate (PagesController#home is missing a template for request formats: text/html):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.4.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-11-10 12:14:57 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 112)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/nikita/Desktop/rails_learn/rapbattle_lyricks_parser/battles_parser/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 7391ms
+Built at: 10.11.2021 12:15:13
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 16764.4ms | Allocations: 14176)
+Completed 200 OK in 16856ms (Views: 16853.8ms | Allocations: 15347)
+
+
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (488.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (465.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBattles (20211110100543)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "battles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211110100543"]]
+  [1m[36mTRANSACTION (467.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-10 10:33:30.574017"], ["updated_at", "2021-11-10 10:33:30.574017"]]
+  [1m[36mTRANSACTION (304.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Create (37.0ms)[0m  [1m[32mINSERT INTO "battles" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "First battle"], ["created_at", "2021-11-10 10:44:11.746276"], ["updated_at", "2021-11-10 10:44:11.746276"]]
+  [1m[36mTRANSACTION (397.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBattle Load (0.4ms)[0m  [1m[34mSELECT "battles".* FROM "battles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/battles/1" for ::1 at 2021-11-10 13:56:15 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant BattlesController
+Did you mean?  BattlesParser):
+  
+Started GET "/battles/1" for ::1 at 2021-11-10 13:59:11 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for BattlesController):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/battles/1" for ::1 at 2021-11-10 13:59:53 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 5ms (Allocations: 1866)
+
+
+  
+ActionController::MissingExactTemplate (BattlesController#show is missing a template for request formats: text/html):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.4.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/battles/1" for ::1 at 2021-11-10 14:03:38 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 306.7ms | Allocations: 3245)
+Completed 200 OK in 417ms (Views: 413.8ms | Allocations: 4458)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:11:11 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3222)
+Completed 200 OK in 28ms (Views: 24.6ms | Allocations: 4421)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:11:17 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 2912)
+Completed 200 OK in 24ms (Views: 22.6ms | Allocations: 3353)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBattle Load (19.1ms)[0m  [1m[34mSELECT "battles".* FROM "battles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/battles/1" for ::1 at 2021-11-10 14:12:49 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 2903)
+Completed 200 OK in 22ms (Views: 20.2ms | Allocations: 3341)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:12:50 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2903)
+Completed 200 OK in 19ms (Views: 17.9ms | Allocations: 3341)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:13:34 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1523)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1592)
+Completed 500 Internal Server Error in 17ms (Allocations: 2764)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+  [1m[36mBattle Load (0.5ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/battles/1" for ::1 at 2021-11-10 14:24:48 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1486)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 1555)
+Completed 500 Internal Server Error in 22ms (Allocations: 2725)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+Started GET "/battles/0" for ::1 at 2021-11-10 14:25:16 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"0"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1406)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1474)
+Completed 500 Internal Server Error in 5ms (Allocations: 1877)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+Started GET "/battles/7" for ::1 at 2021-11-10 14:25:24 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1406)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 1475)
+Completed 500 Internal Server Error in 14ms (Allocations: 1882)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+Started GET "/battles/" for ::1 at 2021-11-10 14:25:28 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BattlesController
+Did you mean?  show):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/battles/1" for ::1 at 2021-11-10 14:25:37 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1406)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1474)
+Completed 500 Internal Server Error in 7ms (Allocations: 1876)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+Started GET "/battles/1" for ::1 at 2021-11-10 14:27:39 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1406)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1474)
+Completed 500 Internal Server Error in 15ms (Allocations: 1876)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1>Battles</h1>
+    2: <%= @battle.title %>
+  
+app/views/battles/show.html.erb:2
+Started GET "/battles/1" for ::1 at 2021-11-10 14:27:48 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  [1m[36mBattle Load (1.0ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3124)
+Completed 200 OK in 55ms (Views: 17.8ms | ActiveRecord: 3.5ms | Allocations: 8799)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:28:57 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3231)
+Completed 200 OK in 40ms (Views: 26.6ms | ActiveRecord: 0.3ms | Allocations: 4989)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 14:29:03 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattle Load (0.2ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 2906)
+Completed 200 OK in 35ms (Views: 25.2ms | ActiveRecord: 0.2ms | Allocations: 3888)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 15:30:59 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  [1m[36mBattle Load (0.7ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 362.5ms | Allocations: 3243)
+Completed 200 OK in 516ms (Views: 481.4ms | ActiveRecord: 1.5ms | Allocations: 5591)
+
+
+Started GET "/battles/" for ::1 at 2021-11-10 15:31:04 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  Rendered battles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 2960)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 3504)
+
+
+Started GET "/battles/" for ::1 at 2021-11-10 15:52:34 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  Rendered battles/index.html.erb within layouts/application (Duration: 53.7ms | Allocations: 1529)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 1598)
+Completed 500 Internal Server Error in 70ms (Allocations: 2680)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12: 	</thead>
+    13: 
+    14: 	<tbody>
+    15: 		<% @battles.each do |b| %>
+    16: 		<tr>
+    17: 			<td>!</td>
+    18: 			<td></td>
+  
+app/views/battles/index.html.erb:15
+Started GET "/battles/" for ::1 at 2021-11-10 15:52:54 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/battles/index.html.erb:15
+  [1m[36mBattle Load (0.6ms)[0m  [1m[34mSELECT "battles".* FROM "battles"[0m
+  ↳ app/views/battles/index.html.erb:15
+  Rendered battles/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 3224)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 120.4ms | Allocations: 6298)
+Completed 200 OK in 369ms (Views: 124.0ms | ActiveRecord: 1.3ms | Allocations: 7419)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Create (500.1ms)[0m  [1m[32mINSERT INTO "battles" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Second Battle"], ["created_at", "2021-11-10 12:53:31.415157"], ["updated_at", "2021-11-10 12:53:31.415157"]]
+  [1m[36mTRANSACTION (281.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Create (0.7ms)[0m  [1m[32mINSERT INTO "battles" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Third Battle"], ["created_at", "2021-11-10 12:53:46.681014"], ["updated_at", "2021-11-10 12:53:46.681014"]]
+  [1m[36mTRANSACTION (340.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/battles/" for ::1 at 2021-11-10 15:53:54 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles"[0m
+  ↳ app/views/battles/index.html.erb:15
+  Rendered battles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3567)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.3ms | Allocations: 4020)
+
+
+Started GET "/battles/" for ::1 at 2021-11-10 15:55:39 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles"[0m
+  ↳ app/views/battles/index.html.erb:15
+  Rendered battles/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 864)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 3966)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.3ms | Allocations: 5185)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBattlers (20211110132524)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (31.4ms)[0m  [1m[35mCREATE TABLE "battlers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211110132524"]]
+  [1m[36mTRANSACTION (461.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/battler/" for ::1 at 2021-11-10 16:31:23 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/battler"):
+  
+Started GET "/battler/1" for ::1 at 2021-11-10 16:31:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/battler/1"):
+  
+Started GET "/battler/1" for ::1 at 2021-11-10 17:00:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/battler/1"):
+  
+Started GET "/battler/1" for ::1 at 2021-11-10 17:00:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/battler/1"):
+  
+Started GET "/battlers/1" for ::1 at 2021-11-10 17:01:04 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  [1m[36mBattler Load (28.1ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+Completed 404 Not Found in 395ms (ActiveRecord: 48.2ms | Allocations: 2955)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Battler with 'id'=1):
+  
+app/controllers/battlers_controller.rb:4:in `show'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattler Create (3.6ms)[0m  [1m[32mINSERT INTO "battlers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Noize MC"], ["created_at", "2021-11-10 14:02:29.907515"], ["updated_at", "2021-11-10 14:02:29.907515"]]
+  [1m[36mTRANSACTION (400.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattler Create (0.9ms)[0m  [1m[32mINSERT INTO "battlers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "OXXY"], ["created_at", "2021-11-10 14:02:40.963675"], ["updated_at", "2021-11-10 14:02:40.963675"]]
+  [1m[36mTRANSACTION (349.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattler Create (0.6ms)[0m  [1m[32mINSERT INTO "battlers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Megamind"], ["created_at", "2021-11-10 14:02:57.167699"], ["updated_at", "2021-11-10 14:02:57.167699"]]
+  [1m[36mTRANSACTION (393.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattler Create (0.9ms)[0m  [1m[32mINSERT INTO "battlers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Obi Van"], ["created_at", "2021-11-10 14:03:21.455171"], ["updated_at", "2021-11-10 14:03:21.455171"]]
+  [1m[36mTRANSACTION (418.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/battlers/1" for ::1 at 2021-11-10 17:03:25 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattler Load (0.2ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 328.0ms | Allocations: 3221)
+Completed 200 OK in 406ms (Views: 357.5ms | ActiveRecord: 0.2ms | Allocations: 6526)
+
+
+Started GET "/battlers/1" for ::1 at 2021-11-10 17:04:45 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattler Load (0.6ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3234)
+Completed 200 OK in 27ms (Views: 17.8ms | ActiveRecord: 0.6ms | Allocations: 4976)
+
+
+Started GET "/battlers/2" for ::1 at 2021-11-10 17:05:01 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBattler Load (0.5ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2906)
+Completed 200 OK in 24ms (Views: 17.5ms | ActiveRecord: 0.5ms | Allocations: 3888)
+
+
+Started GET "/battlers/2" for ::1 at 2021-11-10 17:10:55 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  [1m[36mBattler Load (0.5ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 3257)
+Completed 200 OK in 68ms (Views: 44.1ms | ActiveRecord: 5.5ms | Allocations: 5599)
+
+
+Started GET "/battlers/2" for ::1 at 2021-11-10 17:11:25 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBattler Load (0.3ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3256)
+Completed 200 OK in 40ms (Views: 32.6ms | ActiveRecord: 0.3ms | Allocations: 5000)
+
+
+Started GET "/battlers/2" for ::1 at 2021-11-10 17:11:42 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBattler Load (0.2ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 153)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3255)
+Completed 200 OK in 31ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 4998)
+
+
+Started GET "/battlers/" for ::1 at 2021-11-10 17:12:04 +0300
+Processing by BattlersController#index as HTML
+Completed 406 Not Acceptable in 283ms (ActiveRecord: 0.0ms | Allocations: 1887)
+
+
+  
+ActionController::MissingExactTemplate (BattlersController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.4.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.4.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.4.1) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.4.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.4.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.4.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.4.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.4.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/battlers/" for ::1 at 2021-11-10 17:15:32 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 196.6ms | Allocations: 5016)
+  Rendered layout layouts/application.html.erb (Duration: 198.1ms | Allocations: 5088)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.4ms | Allocations: 6272)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `link_to_battler' for #<ActionView::Base:0x000000000148e8>
+Did you mean?  link_to_unless):
+    2: 
+    3: <% @battlers.each do |battler|%>
+    4: 
+    5: 	<%= link_to_battler%>
+    6: 
+    7: <% end %>
+  
+app/views/battlers/index.html.erb:5
+app/views/battlers/index.html.erb:3
+Started GET "/battlers/" for ::1 at 2021-11-10 17:16:04 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered battlers/index.html.erb within layouts/application (Duration: 125.0ms | Allocations: 4526)
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 4595)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.4ms | Allocations: 5778)
+
+
+  
+ActionView::Template::Error (undefined method `each_with' for #<ActiveRecord::Relation [#<Battler id: 1, name: "Noize MC", created_at: "2021-11-10 14:02:29.907515000 +0000", updated_at: "2021-11-10 14:02:29.907515000 +0000">, #<Battler id: 2, name: "OXXY", created_at: "2021-11-10 14:02:40.963675000 +0000", updated_at: "2021-11-10 14:02:40.963675000 +0000">, #<Battler id: 3, name: "Megamind", created_at: "2021-11-10 14:02:57.167699000 +0000", updated_at: "2021-11-10 14:02:57.167699000 +0000">, #<Battler id: 4, name: "Obi Van", created_at: "2021-11-10 14:03:21.455171000 +0000", updated_at: "2021-11-10 14:03:21.455171000 +0000">]>
+Did you mean?  each_with_index):
+    1: <h1> Battlers listing page </h1>
+    2: 
+    3: <% @battlers.each_with do |battler|%>
+    4: 
+    5: 	<%= link_to_battler%>
+    6: 
+  
+app/views/battlers/index.html.erb:3
+Started GET "/battlers/" for ::1 at 2021-11-10 18:18:09 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBattler Load (31.6ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered battlers/index.html.erb within layouts/application (Duration: 128.3ms | Allocations: 7233)
+  Rendered layout layouts/application.html.erb (Duration: 128.8ms | Allocations: 7302)
+Completed 500 Internal Server Error in 662ms (ActiveRecord: 40.6ms | Allocations: 11595)
+
+
+  
+ActionView::Template::Error (undefined method `each_with' for #<ActiveRecord::Relation [#<Battler id: 1, name: "Noize MC", created_at: "2021-11-10 14:02:29.907515000 +0000", updated_at: "2021-11-10 14:02:29.907515000 +0000">, #<Battler id: 2, name: "OXXY", created_at: "2021-11-10 14:02:40.963675000 +0000", updated_at: "2021-11-10 14:02:40.963675000 +0000">, #<Battler id: 3, name: "Megamind", created_at: "2021-11-10 14:02:57.167699000 +0000", updated_at: "2021-11-10 14:02:57.167699000 +0000">, #<Battler id: 4, name: "Obi Van", created_at: "2021-11-10 14:03:21.455171000 +0000", updated_at: "2021-11-10 14:03:21.455171000 +0000">]>
+Did you mean?  each_with_index):
+    1: <h1> Battlers listing page </h1>
+    2: 
+    3: <% @battlers.each_with do |battler|%>
+    4: 
+    5: 	<%= link_to_battler%>
+    6: 
+  
+app/views/battlers/index.html.erb:3
+Started GET "/battlers/" for ::1 at 2021-11-10 18:22:10 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 259.1ms | Allocations: 1711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 834.3ms | Allocations: 4822)
+Completed 200 OK in 882ms (Views: 878.3ms | ActiveRecord: 0.4ms | Allocations: 6041)
+
+
+Started GET "/battlers" for ::1 at 2021-11-10 18:22:24 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.5ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 3840)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.5ms | Allocations: 4381)
+
+
+Started GET "/battlers" for ::1 at 2021-11-10 18:23:01 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.2ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.2ms | Allocations: 4213)
+Completed 200 OK in 89ms (Views: 86.0ms | ActiveRecord: 0.2ms | Allocations: 5427)
+
+
+Started GET "/battlers" for ::1 at 2021-11-10 18:24:48 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  Rendered battlers/index.html.erb within layouts/application (Duration: 151.6ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 152.8ms | Allocations: 1205)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1> Battlers listing page </h1>
+
+<% @battlers.each do |battler|%>
+
+	<p> <%= link_to "#{battler.name}" battler %> </p>
+
+<% end %>
+):
+1:    <h1> Battlers listing page </h1>
+2:    
+3:    <% @battlers.each do |battler|%>
+4:    
+5:    	<p> <%= link_to "#{battler.name}" battler %> </p>
+6:    
+7:    <% end %>
+  
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+app/views/battlers/index.html.erb:5: syntax error, unexpected local variable or method, expecting ')'
+  [1m[36mBattler Load (124.5ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBattler Load (0.3ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBattler Load (0.5ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+Started GET "/battlers" for ::1 at 2021-11-10 18:30:29 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/battlers/index.html.erb:3
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 102.0ms | Allocations: 1794)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.2ms | Allocations: 4903)
+Completed 200 OK in 131ms (Views: 127.3ms | ActiveRecord: 2.1ms | Allocations: 6121)
+
+
+Started GET "/battlers/2" for ::1 at 2021-11-10 18:30:33 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBattler Load (0.6ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 179.8ms | Allocations: 813)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 190.5ms | Allocations: 3681)
+Completed 200 OK in 203ms (Views: 191.8ms | ActiveRecord: 0.6ms | Allocations: 4923)
+
+
+Started GET "/battlers/" for ::1 at 2021-11-10 18:34:38 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 3704)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.4ms | Allocations: 4157)
+
+
+Started GET "/battlers/3" for ::1 at 2021-11-10 18:34:41 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBattler Load (0.3ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 3559)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.3ms | Allocations: 4543)
+
+
+Started GET "/battlers/" for ::1 at 2021-11-10 18:34:46 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.3ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 840)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 3704)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.3ms | Allocations: 4157)
+
+
+Started GET "/battles/1" for ::1 at 2021-11-10 18:57:36 +0300
+Processing by BattlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  [1m[36mBattle Load (0.4ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battles_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battles/show.html.erb within layouts/application
+  Rendered battles/show.html.erb within layouts/application (Duration: 27.7ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 519.2ms | Allocations: 3038)
+Completed 200 OK in 931ms (Views: 524.0ms | ActiveRecord: 1.3ms | Allocations: 9072)
+
+
