@@ -1424,3 +1424,47 @@ Completed 200 OK in 51ms (Views: 43.7ms | ActiveRecord: 0.3ms | Allocations: 506
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mBattler Create (6.5ms)[0m  [1m[32mINSERT INTO "battlers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vasya Pup"], ["created_at", "2021-11-12 09:50:43.996961"], ["updated_at", "2021-11-12 09:50:43.996961"]]
   [1m[36mTRANSACTION (632.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRounds (20211112095459)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRounds (20211112095459)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "rounds" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "round_text" text, "battle_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (9.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211112095459"]]
+  [1m[36mTRANSACTION (593.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles" ORDER BY "battles"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRound Load (0.3ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" WHERE "rounds"."battle_id" = ?[0m  [["battle_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (68.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRound Load (58.4ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles" ORDER BY "battles"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Load (0.4ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRound Create (75.6ms)[0m  [1m[32mINSERT INTO "rounds" ("round_text", "battle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["round_text", "I can not rap"], ["battle_id", 1], ["created_at", "2021-11-12 10:57:39.569001"], ["updated_at", "2021-11-12 10:57:39.569001"]]
+  [1m[36mTRANSACTION (592.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRound Load (0.5ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" WHERE "rounds"."battle_id" = ? /* loading for inspect */ LIMIT ?[0m  [["battle_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mRound Load (0.6ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" WHERE "rounds"."battle_id" = ? /* loading for inspect */ LIMIT ?[0m  [["battle_id", 1], ["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Load (0.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRound Create (10.5ms)[0m  [1m[32mINSERT INTO "rounds" ("round_text", "battle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["round_text", "I can not rap anymore"], ["battle_id", 1], ["created_at", "2021-11-12 10:59:45.753694"], ["updated_at", "2021-11-12 10:59:45.753694"]]
+  [1m[36mTRANSACTION (257.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRound Load (0.4ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" WHERE "rounds"."battle_id" = ? /* loading for inspect */ LIMIT ?[0m  [["battle_id", 1], ["LIMIT", 11]]
+  [1m[36mBattle Load (0.4ms)[0m  [1m[34mSELECT "battles".* FROM "battles" ORDER BY "battles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Load (0.2ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRound Create (5.4ms)[0m  [1m[32mINSERT INTO "rounds" ("round_text", "battle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["round_text", "I can do more rap anymore"], ["battle_id", 2], ["created_at", "2021-11-12 11:00:28.334625"], ["updated_at", "2021-11-12 11:00:28.334625"]]
+  [1m[36mTRANSACTION (526.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBattle Load (0.4ms)[0m  [1m[34mSELECT "battles".* FROM "battles" WHERE "battles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRound Create (8.5ms)[0m  [1m[32mINSERT INTO "rounds" ("round_text", "battle_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["round_text", "loooloo more rap anymore"], ["battle_id", 2], ["created_at", "2021-11-12 11:00:37.708756"], ["updated_at", "2021-11-12 11:00:37.708756"]]
+  [1m[36mTRANSACTION (534.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRound Load (0.2ms)[0m  [1m[34mSELECT "rounds".* FROM "rounds" WHERE "rounds"."battle_id" = ? /* loading for inspect */ LIMIT ?[0m  [["battle_id", 2], ["LIMIT", 11]]
