@@ -1,3 +1,8 @@
 <h1>Battles</h1>
 
-<p> <%= @battle.title %> </p>
+<h2> <%= @battle.title %> </h2>
+
+<%  @battle.rounds.each do |round|%> 
+	<p> <%= round.round_text %> </p>
+
+<% end %>
