@@ -1,2 +1,23 @@
-<h1>Hello! Let's start!</h1>
 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<div class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;">
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Users:</h1>
+	        
+			<% n = 0 %>
+			<% @users.each do |user| %>
+			<p class="col-md fs-4 md-10 text-left">
+						<%= n += 1 %>
+						<%= user.username %>
+			</p>		
+			<% end %>
+	        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+	      </div>
+	    </div>
+	</div>
+</div>
