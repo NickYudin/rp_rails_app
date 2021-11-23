@@ -5564,3 +5564,2766 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 27ms (Views: 23.8ms | Allocations: 5404)
 
 
+Started GET "/signup" for ::1 at 2021-11-23 12:53:53 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 29.7ms | Allocations: 3587)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 3657)
+Completed 500 Internal Server Error in 38ms (Allocations: 4841)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Enter email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Enter your password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  </br>
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <label for="exampleInputEmail1">Enter email address</label>
+13:    			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+14:    			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+15:    			  </div>
+16:    			  <div class="form-group">
+17:    			    <label for="exampleInputPassword1">Enter your password</label>
+18:    			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+19:    			  </div>
+20:    			  </br>
+21:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+22:    			<% end %>
+23:    	      </div>
+24:    	    </div>
+25:    	</div>
+26:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+Started GET "/signup" for ::1 at 2021-11-23 12:55:40 +0300
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1098)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1168)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 1.9ms | Allocations: 6798)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Enter email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Enter your password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  </br>
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <label for="exampleInputEmail1">Enter email address</label>
+13:    			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+14:    			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+15:    			  </div>
+16:    			  <div class="form-group">
+17:    			    <label for="exampleInputPassword1">Enter your password</label>
+18:    			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+19:    			  </div>
+20:    			  </br>
+21:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+22:    			<% end %>
+23:    	      </div>
+24:    	    </div>
+25:    	</div>
+26:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+Started GET "/signup" for ::1 at 2021-11-23 12:55:45 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1131)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1200)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1620)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Enter email address</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Enter your password</label>
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			  </div>
+			  </br>
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <label for="exampleInputEmail1">Enter email address</label>
+13:    			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+14:    			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+15:    			  </div>
+16:    			  <div class="form-group">
+17:    			    <label for="exampleInputPassword1">Enter your password</label>
+18:    			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+19:    			  </div>
+20:    			  </br>
+21:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+22:    			<% end %>
+23:    	      </div>
+24:    	    </div>
+25:    	</div>
+26:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected `end', expecting end-of-input
+Started GET "/signup" for ::1 at 2021-11-23 12:59:40 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1220)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2414)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username => 
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <%= f.label :username => 
+13:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+14:    			<% end %>
+15:    	      </div>
+16:    	    </div>
+17:    	</div>
+18:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:00:16 +0300
+Processing by UsersController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1114)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1184)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.5ms | Allocations: 6874)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username => 
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <%= f.label :username => 
+13:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+14:    			<% end %>
+15:    	      </div>
+16:    	    </div>
+17:    	</div>
+18:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:00:30 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1137)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1206)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 1626)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container-lg bg-Warning">
+
+
+	<div class="jumbotron">
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username => 
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+	      </div>
+	    </div>
+	</div>
+</div>
+):
+1:    
+2:    <div class="container-lg bg-Warning">
+3:    
+4:    
+5:    	<div class="jumbotron">
+6:    		
+7:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+8:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+9:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+10:    	       <form>
+11:    			  <div class="form-group">
+12:    			    <%= f.label :username => 
+13:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+14:    			<% end %>
+15:    	      </div>
+16:    	    </div>
+17:    	</div>
+18:    </div>
+  
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:7: syntax error, unexpected '='
+app/views/users/new.html.erb:7: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected '<'
+app/views/users/new.html.erb:13: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:13: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:15: unknown regexp options - dv
+app/views/users/new.html.erb:15: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:16: syntax error, unexpected '<'
+app/views/users/new.html.erb:17: unknown regexp options - dv
+app/views/users/new.html.erb:18: syntax error, unexpected '<'
+app/views/users/new.html.erb:20: unterminated regexp meets end of file
+app/views/users/new.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:00:53 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1198)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2384)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username => 
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+5:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+6:    	       <form>
+7:    			  <div class="form-group">
+8:    			    <%= f.label :username => 
+9:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+10:    			<% end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:00:58 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 1198)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 2385)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username => 
+			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+			<% end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+5:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+6:    	       <form>
+7:    			  <div class="form-group">
+8:    			    <%= f.label :username => 
+9:    			  	<button type="submit" class="btn btn-primary">Sign up!</button>
+10:    			<% end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:9: syntax error, unexpected '<'
+app/views/users/new.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:9: syntax error, unexpected method, expecting `do' or '{' or '('
+app/views/users/new.html.erb:13: unterminated regexp meets end of file
+app/views/users/new.html.erb:13: unmatched close parenthesis: /button>
+app/views/users/new.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:01:48 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 1210)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms | Allocations: 2397)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+	       <form>
+			  <div class="form-group">
+			    <%= f.label :username %> 
+			  	<button> type="submit" class="btn btn-primary">Sign up!</button>
+			<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+5:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+6:    	       <form>
+7:    			  <div class="form-group">
+8:    			    <%= f.label :username %> 
+9:    			  	<button> type="submit" class="btn btn-primary">Sign up!</button>
+10:    			<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end'
+app/views/users/new.html.erb:13: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:02:16 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1136)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 1206)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 2398)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+			    <%= f.label :username %> 
+		<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    	      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+5:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+6:    			    <%= f.label :username %> 
+7:    		<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:02:52 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1136)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 1206)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+	      
+	        <h1 class="display-5 fw-bold">Sign up:</h1>
+			    <%= f.label :username %> 
+		<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    	      
+5:    	        <h1 class="display-5 fw-bold">Sign up:</h1>
+6:    			    <%= f.label :username %> 
+7:    		<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:7: syntax error, unexpected `end'
+app/views/users/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:03:03 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1136)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1206)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 2393)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+			    <%= f.label :username %> 
+		<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;") do |f| %>
+4:    			    <%= f.label :username %> 
+5:    		<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:03:34 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1131)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1201)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2388)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow") do |f| %>
+			    <%= f.label :username %> 
+		<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 mb-4 rounded-3 text-center shadow") do |f| %>
+4:    			    <%= f.label :username %> 
+5:    		<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:03:52 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1134)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1204)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 2392)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+		
+		<%= form_with(model @user, class="p-5 ") do |f| %>
+			    <%= f.label :username %> 
+		<%= end %>
+
+):
+1:    
+2:    		
+3:    		<%= form_with(model @user, class="p-5 ") do |f| %>
+4:    			    <%= f.label :username %> 
+5:    		<%= end %>
+  
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:3: syntax error, unexpected '='
+app/views/users/new.html.erb:3: syntax error, unexpected ')', expecting `end'
+app/views/users/new.html.erb:5: syntax error, unexpected `end'
+app/views/users/new.html.erb:8: syntax error, unexpected `end', expecting ')'
+Started GET "/signup" for ::1 at 2021-11-23 13:04:27 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 190.4ms | Allocations: 4716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 4.7ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 244.2ms | Allocations: 8687)
+Completed 200 OK in 297ms (Views: 291.3ms | ActiveRecord: 0.0ms | Allocations: 9911)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:05:05 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4681)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 5904)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:06:05 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 31.4ms | Allocations: 2972)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 6903)
+Completed 200 OK in 59ms (Views: 56.4ms | Allocations: 8118)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:06:09 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 3969)
+Completed 200 OK in 36ms (Views: 34.3ms | Allocations: 4423)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:06:53 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 34.6ms | Allocations: 2948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 6879)
+Completed 200 OK in 74ms (Views: 71.5ms | Allocations: 8093)
+
+
+Started POST "/users" for ::1 at 2021-11-23 13:07:22 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController
+Did you mean?  new
+               show):
+  
+actionpack (6.1.4.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/signup" for ::1 at 2021-11-23 13:10:13 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 613)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 4681)
+Completed 200 OK in 39ms (Views: 35.8ms | Allocations: 5901)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:10:15 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 3954)
+Completed 200 OK in 22ms (Views: 21.1ms | Allocations: 4408)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:10:19 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3954)
+Completed 200 OK in 25ms (Views: 23.5ms | Allocations: 4407)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:11:57 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 4647)
+Completed 200 OK in 32ms (Views: 30.0ms | Allocations: 5861)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:14:45 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.0ms | Allocations: 613)
+  Rendered users/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 1379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 5405)
+Completed 200 OK in 41ms (Views: 39.0ms | Allocations: 6620)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:14:58 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.9ms | Allocations: 612)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 4969)
+Completed 200 OK in 46ms (Views: 39.1ms | Allocations: 6184)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:15:34 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 69.6ms | Allocations: 3680)
+  Rendered users/new.html.erb within layouts/application (Duration: 72.4ms | Allocations: 4014)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 101.7ms | Allocations: 7979)
+Completed 200 OK in 107ms (Views: 105.1ms | Allocations: 9200)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:16:06 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.6ms | Allocations: 945)
+  Rendered users/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 1276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 5302)
+Completed 200 OK in 48ms (Views: 41.3ms | Allocations: 6518)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:16:59 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.3ms | Allocations: 916)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 5315)
+Completed 200 OK in 44ms (Views: 42.1ms | Allocations: 6535)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:18:24 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.3ms | Allocations: 1337)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1740)
+Completed 500 Internal Server Error in 13ms (Allocations: 2920)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.submit, class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group">
+18:    		  <%= f.submit, class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:18:41 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.5ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1740)
+Completed 500 Internal Server Error in 15ms (Allocations: 2925)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:18:50 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.4ms | Allocations: 1327)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1425)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1494)
+Completed 500 Internal Server Error in 11ms (Allocations: 1913)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:19:45 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1740)
+Completed 500 Internal Server Error in 16ms (Allocations: 2924)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-justify">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-justify">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:20:22 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.6ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 1740)
+Completed 500 Internal Server Error in 27ms (Allocations: 2925)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group justify-content">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group justify-content">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:21:09 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.8ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 21.5ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 1740)
+Completed 500 Internal Server Error in 53ms (Allocations: 2925)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group justify-content-center">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group justify-content-center">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:21:40 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.2ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 1740)
+Completed 500 Internal Server Error in 27ms (Allocations: 2925)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:21:43 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.5ms | Allocations: 1327)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1425)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 1494)
+Completed 500 Internal Server Error in 19ms (Allocations: 1913)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit class="btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit class="btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:22:26 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 1740)
+Completed 500 Internal Server Error in 26ms (Allocations: 2924)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit class="btn btn-primary" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit class="btn btn-primary" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:22:30 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 14.7ms | Allocations: 1327)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1425)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 1494)
+Completed 500 Internal Server Error in 19ms (Allocations: 1913)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit class="btn btn-primary" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit class="btn btn-primary" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/_form.html.erb:18: syntax error, unexpected '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:22:55 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.8ms | Allocations: 917)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1249)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5315)
+Completed 200 OK in 42ms (Views: 39.5ms | Allocations: 6534)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:28:28 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 1338)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1675)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1745)
+Completed 500 Internal Server Error in 24ms (Allocations: 2930)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email class: "form-control shadow rounded", placeholder: "Enter your email" %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email class: "form-control shadow rounded", placeholder: "Enter your email" %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected `class', expecting ')'
+app/views/users/_form.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:29:09 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.2ms | Allocations: 933)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 5329)
+Completed 200 OK in 47ms (Views: 41.0ms | Allocations: 6550)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:30:11 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.4ms | Allocations: 947)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 5304)
+Completed 200 OK in 70ms (Views: 68.1ms | Allocations: 6519)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:31:20 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 1345)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1678)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1748)
+Completed 500 Internal Server Error in 17ms (Allocations: 2928)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<form>
+	 
+	<%= form_with model: @user do |f| %>
+	<div class="form-group">
+		  <%= f.label :email %>
+	</div>
+	<div class="form-group">
+		  <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email" %>
+	</div>
+	<div class="form-group">
+		  <%= f.label :password %>
+	</div>
+	<div class="form-group">
+		  <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Enter password" %>
+	</div>
+	<div class="form-group row justify-content-center">
+		  <%= f.submit, class: "btn btn-warning" %>
+	</div>
+	<% end %>
+</form>
+):
+1:    
+2:    <form>
+3:    	 
+4:    	<%= form_with model: @user do |f| %>
+5:    	<div class="form-group">
+6:    		  <%= f.label :email %>
+7:    	</div>
+8:    	<div class="form-group">
+9:    		  <%= f.email_field :email, class: "form-control shadow rounded", placeholder: "Enter your email" %>
+10:    	</div>
+11:    	<div class="form-group">
+12:    		  <%= f.label :password %>
+13:    	</div>
+14:    	<div class="form-group">
+15:    		  <%= f.password_field :password, class: "form-control shadow rounded", placeholder: "Enter password" %>
+16:    	</div>
+17:    	<div class="form-group row justify-content-center">
+18:    		  <%= f.submit, class: "btn btn-warning" %>
+19:    	</div>
+20:    	<% end %>
+21:    </form>
+  
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:18: syntax error, unexpected label, expecting '='
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 13:32:01 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.1ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 5353)
+Completed 200 OK in 37ms (Views: 33.8ms | Allocations: 6573)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:32:31 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 13.3ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 5356)
+Completed 200 OK in 37ms (Views: 34.2ms | Allocations: 6577)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:32:46 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.0ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1288)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 5314)
+Completed 200 OK in 44ms (Views: 40.8ms | Allocations: 6529)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:33:09 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 15.0ms | Allocations: 958)
+  Rendered users/new.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 5315)
+Completed 200 OK in 55ms (Views: 51.1ms | Allocations: 6530)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:45:44 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 15.6ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 1288)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 5314)
+Completed 200 OK in 56ms (Views: 49.9ms | Allocations: 6529)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 13:45:48 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.9ms | Allocations: 692)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 4343)
+Completed 200 OK in 51ms (Views: 47.8ms | Allocations: 4798)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 13:45:51 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.3ms | Allocations: 692)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 4380)
+Completed 200 OK in 43ms (Views: 40.2ms | Allocations: 4833)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 13:45:52 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 16.2ms | Allocations: 692)
+  Rendered users/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 4380)
+Completed 200 OK in 48ms (Views: 45.7ms | Allocations: 4834)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 13:45:53 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 12.7ms | Allocations: 692)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.7ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 4377)
+Completed 200 OK in 42ms (Views: 40.5ms | Allocations: 4831)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=123123%40ddfsd&user%5Bpassword%5D=[FILTERED]&commit=Create+User" for ::1 at 2021-11-23 13:46:34 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"123123@ddfsd", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.4ms | Allocations: 692)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 4343)
+Completed 200 OK in 63ms (Views: 44.5ms | Allocations: 4796)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:46:39 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/home.html.erb:12
+  [1m[36mUser Load (33.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 71.3ms | Allocations: 1455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 5058)
+Completed 200 OK in 91ms (Views: 88.2ms | ActiveRecord: 34.7ms | Allocations: 6170)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:47:51 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 24.5ms | Allocations: 720)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 4772)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 3.2ms | Allocations: 5987)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:48:28 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 713)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 8.1ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 4764)
+Completed 200 OK in 102ms (Views: 82.7ms | ActiveRecord: 0.3ms | Allocations: 5980)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 13:49:56 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.4ms | Allocations: 957)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.4ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 5352)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms | Allocations: 6573)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:50:51 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.4ms | Allocations: 715)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 4804)
+Completed 200 OK in 78ms (Views: 74.9ms | ActiveRecord: 0.2ms | Allocations: 6618)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:51:14 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4803)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.4ms | Allocations: 6019)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:51:39 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4110)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.4ms | Allocations: 4564)
+
+
+Started GET "/battles" for ::1 at 2021-11-23 13:51:49 +0300
+Processing by BattlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battles/index.html.erb within layouts/application
+  [1m[36mBattle Load (171.3ms)[0m  [1m[34mSELECT "battles".* FROM "battles"[0m
+  ↳ app/views/battles/index.html.erb:13
+  Rendered battles/index.html.erb within layouts/application (Duration: 252.9ms | Allocations: 2832)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 275.3ms | Allocations: 6432)
+Completed 200 OK in 805ms (Views: 120.2ms | ActiveRecord: 172.4ms | Allocations: 8552)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:51:54 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 4543)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.8ms | Allocations: 5165)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:51:59 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.6ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 4110)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.3ms | Allocations: 4564)
+
+
+Started GET "/battlers" for ::1 at 2021-11-23 13:52:02 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.6ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 2976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 6612)
+Completed 200 OK in 65ms (Views: 38.2ms | ActiveRecord: 1.6ms | Allocations: 8463)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:52:57 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 33.4ms | Allocations: 1303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 3.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 78.7ms | Allocations: 5393)
+Completed 200 OK in 95ms (Views: 88.5ms | ActiveRecord: 0.2ms | Allocations: 6617)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:53:29 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 712)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4796)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.4ms | Allocations: 6012)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:53:33 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4110)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.2ms | Allocations: 4564)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:53:46 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4110)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 4566)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:53:52 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.7ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 4110)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms | Allocations: 4566)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:53:56 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 4110)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms | Allocations: 4564)
+
+
+Started GET "/battlers" for ::1 at 2021-11-23 13:54:00 +0300
+Processing by BattlersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/index.html.erb within layouts/application
+  [1m[36mBattler Load (0.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers"[0m
+  ↳ app/views/battlers/index.html.erb:3
+  Rendered battlers/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 856)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 5126)
+Completed 200 OK in 59ms (Views: 53.3ms | ActiveRecord: 0.4ms | Allocations: 6125)
+
+
+Started GET "/battlers/1" for ::1 at 2021-11-23 13:54:02 +0300
+Processing by BattlersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBattler Load (30.4ms)[0m  [1m[34mSELECT "battlers".* FROM "battlers" WHERE "battlers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/battlers_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering battlers/show.html.erb within layouts/application
+  Rendered battlers/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3697)
+Completed 200 OK in 108ms (Views: 13.5ms | ActiveRecord: 30.4ms | Allocations: 7777)
+
+
+Started GET "/" for ::1 at 2021-11-23 13:54:04 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 5194)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.2ms | Allocations: 5658)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:27:09 +0300
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1671)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2012)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2081)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.5ms | Allocations: 7194)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_errors with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/nikita/Desktop/rails_learn/rails_learn/app/views"
+  * "/home/nikita/.rvm/gems/ruby-3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/home/nikita/.rvm/gems/ruby-3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <%= render 'shared/errors', obj: @user %>
+    2: <form>
+    3: 	 
+    4: 	<%= form_with model: @user do |f| %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:10
+Started GET "/signup" for ::1 at 2021-11-23 14:30:42 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.5ms | Allocations: 199)
+  Rendered users/_form.html.erb (Duration: 10.9ms | Allocations: 1431)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1763)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 5831)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms | Allocations: 7054)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 14:30:49 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered users/_form.html.erb (Duration: 7.2ms | Allocations: 791)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 4442)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.0ms | Allocations: 4899)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=nik6594%40mail.ru&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 14:30:58 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nik6594@mail.ru", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 791)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 4442)
+Completed 200 OK in 50ms (Views: 35.5ms | ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 14:31:01 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered users/_form.html.erb (Duration: 20.4ms | Allocations: 791)
+  Rendered users/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 4442)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+Started GET "/signup?authenticity_token=[FILTERED]&user%5Bemail%5D=&user%5Bpassword%5D=&commit=Create+User" for ::1 at 2021-11-23 14:31:02 +0300
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered users/_form.html.erb (Duration: 5.6ms | Allocations: 791)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 4442)
+Completed 200 OK in 54ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 4899)
+
+
+Started GET "/" for ::1 at 2021-11-23 14:31:23 +0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:12
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 4961)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.5ms | Allocations: 6022)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:33:43 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 5.1ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 14.7ms | Allocations: 1597)
+  Rendered users/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 5998)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 7221)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:34:15 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 11.8ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 66.4ms | Allocations: 1566)
+  Rendered users/new.html.erb within layouts/application (Duration: 69.9ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 12.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 137.6ms | Allocations: 5923)
+Completed 200 OK in 175ms (Views: 158.0ms | ActiveRecord: 0.0ms | Allocations: 7145)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:36:40 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 5.4ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 18.3ms | Allocations: 1567)
+  Rendered users/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 5924)
+Completed 200 OK in 40ms (Views: 37.0ms | Allocations: 7139)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:36:54 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.1ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 13.0ms | Allocations: 1566)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 5923)
+Completed 200 OK in 43ms (Views: 37.4ms | Allocations: 7138)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:37:11 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.1ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 21.4ms | Allocations: 1566)
+  Rendered users/new.html.erb within layouts/application (Duration: 26.2ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 5924)
+Completed 200 OK in 51ms (Views: 48.2ms | Allocations: 7140)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:37:19 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 10.2ms | Allocations: 1567)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 5968)
+Completed 200 OK in 48ms (Views: 45.7ms | Allocations: 7189)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:37:50 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.8ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 11.9ms | Allocations: 1566)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 5923)
+Completed 200 OK in 45ms (Views: 40.7ms | Allocations: 7142)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:38:14 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 3.6ms | Allocations: 188)
+  Rendered users/_form.html.erb (Duration: 39.6ms | Allocations: 1567)
+  Rendered users/new.html.erb within layouts/application (Duration: 57.0ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 89.7ms | Allocations: 5924)
+Completed 200 OK in 126ms (Views: 123.9ms | Allocations: 7139)
+
+
+Started GET "/signup" for ::1 at 2021-11-23 14:38:41 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.8ms | Allocations: 189)
+  Rendered users/_form.html.erb (Duration: 14.3ms | Allocations: 1567)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 5924)
+Completed 200 OK in 40ms (Views: 33.4ms | Allocations: 7139)
+
+
