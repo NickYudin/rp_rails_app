@@ -1,12 +1,11 @@
 <%= render 'shared/errors', obj: @user %>
-<form>
-	 
-	<%= form_with model: @user do |f| %>
+
+	<%= form_with scope: :user, url: users_path, local: true do |f| %>
 	<div class="form-group">
 		  <%= f.label :username %>
 	</div>
 	<div class="form-group">
-		  <%= f.email_field :username, class: "form-control-lg shadow rounded wigth", placeholder: "Enter your name" %>
+		  <%= f.text_field :username, class: "form-control-lg shadow rounded wigth", placeholder: "Enter your name" %>
 	</div>
 	<div class="form-group">
 		  <%= f.label :email %>
@@ -19,10 +18,10 @@
 	</div>
 	<div class="form-group">
 		  <%= f.password_field :password, class: "form-control-lg shadow rounded", placeholder: "Enter password" %>
-	</div>
-</br>
-	<div class="form-group justify-content-center">
-		  <%= f.submit class: "btn btn-warning btn-lg" %>
-	</div>
+	</div><br/>
+	<p>
+		<div class="form-group justify-content-center">
+			  <%= f.submit class: "btn btn-warning btn-lg" %>
+		</div>
+	</p>
 	<% end %>
-</form>

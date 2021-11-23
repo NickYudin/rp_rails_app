@@ -3,9 +3,8 @@
       <h4 class="alert-heading"> Folowing errors prevented the users from being saved: </h4>
       <ul>
         <% obj.errors.full_messages.each do |msg| %>
-          <li> <% msg %> </li>
+          <li> <%= msg %> </li>
         <% end %>
       </ul>
-    This is a danger alert—check it out!
   </div>
 <% end %>

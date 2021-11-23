@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-	def home
+	def home #rename to index!!!!!!!!!!!!!!!!!!!!!!!
 		@users = User.all
 	end
 
