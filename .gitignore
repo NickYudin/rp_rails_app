@@ -1,0 +1,6 @@
+tmp/
+log/
+public/uploads/
+public/assets/
+.bundle
+.env
