@@ -5,14 +5,15 @@
 		      <div class="container-fluid py-5 bg-dark bg-opacity-75">
 		        <h1 class="display-5 fw-bold">Users:</h1>
 		        
-				<% n = 0 %>
+				<%= will_paginate @users, class: "apple_pagination" %>
 				<% @users.each do |user| %>
-				<p class="col-md fs-4 md-10 text-left">
-							<%= n += 1 %>
-							<%= user.username %>
+				<p class="col-md fs-5 md-8 text-left text-warning">
+							<%= user.id %>
+							<%= link_to "#{user.username}", user, class: "link-danger" %>
 				</p>		
 				<% end %>
-				<a href="/signup" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Sign up!</a>
+				<%= will_paginate @users, class: "apple_pagination" %>				
+				<a href="/signup" class="btn btn-danger btn-lg fs-3 active" role="button" aria-pressed="true">Sign up!</a>
 		      </div>
 		    </div>
 		</div>
