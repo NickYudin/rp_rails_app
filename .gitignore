@@ -4,3 +4,4 @@ public/uploads/
 public/assets/
 .bundle
 .env
+.sqlite3
