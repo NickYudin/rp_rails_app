@@ -1,5 +1,5 @@
 
-<%= form_with scope: :user, url: users_path, local: true do |f| %>
+<%= form_with model: @user do |f| %>
 	<div class="form-group">
 		  <%= f.label :username %>
 	</div>
