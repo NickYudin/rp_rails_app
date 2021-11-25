@@ -21,9 +21,11 @@
 .footer {
     position: absolute;
     bottom: 0;
+    border: 1px;
+    border-color: white;
     width: 100%;
-    height: 80 px;
-    line-height: 80px;
+    height: 120 px;
+    line-height: 120px;
     background-color: black;
     flex-srink: none;
     position: bottom;

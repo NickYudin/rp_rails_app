@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
 
 before_action :set_user, only: [:show, :edit, :update, :destroy]
-before_action :require_user, only: [:edit, :update ]
+before_action :require_user, only: [:edit, :update]
 before_action :require_same_user, only: [:edit, :update]
+
+
+	def index
+		@users = User.paginate(page: params[:page], per_page: 8)
+	end 
 
 	def new
 		@user = User.new
@@ -37,8 +42,11 @@ before_action :require_same_user, only: [:edit, :update]
 
 
 	def destroy
+		byebug
 		@user.destroy
-		session[:user_id] =nil
+		session[:user_id] =nil if @user != current_user
+		flash[:notice] = "User successfully deleted"
+		redirect_to root_path
 	end
 	
 	private
@@ -52,6 +60,7 @@ before_action :require_same_user, only: [:edit, :update]
 	end
 
 	def require_same_user
+
 		if current_user != @user 
 			flash[:notice] = "You can only edit your account"
 			redirect_to user_path

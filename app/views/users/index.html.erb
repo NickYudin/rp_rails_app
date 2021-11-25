@@ -1,1 +1,21 @@
-users index
+<div id="page-content">
+	<div class="container-lg bg-Warning">
+		<div class="jumbotron">		
+			<div class="p-5 mb-4 rounded-3 text-center shadow" style="--bs-bg-opacity: .5;">
+		      <div class="container-fluid py-5 bg-dark bg-opacity-75">
+		        <h1 class="display-5 fw-bold">Users:</h1>
+		        
+				<%= will_paginate @users, class: "apple_pagination" %>
+					<% @users.each do |user| %>
+						<p class="col-md fs-5 md-8 text-left text-warning">
+							<%= user.id %>
+							<%= link_to "#{user.username}", user, class: "link-warning" %>
+						</p>		
+					<% end %>
+				<%= will_paginate @users, class: "apple_pagination" %>				
+				
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
