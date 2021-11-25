@@ -6,14 +6,14 @@
 		        <h1 class="display-5 fw-bold">Users:</h1>
 		        
 				<%= will_paginate @users, class: "apple_pagination" %>
-				<% @users.each do |user| %>
-				<p class="col-md fs-5 md-8 text-left text-warning">
+					<% @users.each do |user| %>
+						<p class="col-md fs-5 md-8 text-left text-warning">
 							<%= user.id %>
-							<%= link_to "#{user.username}", user, class: "link-danger" %>
-				</p>		
-				<% end %>
+							<%= link_to "#{user.username}", user, class: "link-warning" %>
+						</p>		
+					<% end %>
 				<%= will_paginate @users, class: "apple_pagination" %>				
-				<a href="/signup" class="btn btn-danger btn-lg fs-3 active" role="button" aria-pressed="true">Sign up!</a>
+				
 		      </div>
 		    </div>
 		</div>

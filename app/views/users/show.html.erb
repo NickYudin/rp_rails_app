@@ -1,7 +1,14 @@
 <div class="container-lg bg-Warning">
 
 	<div class="text-center">
+		<h1 class="display-5 fw-bold mt-5"><%= "#{@user.username}" %>'s profile</h1>
   		<img class="img-responsive" src="/images/hat.jpg"  width="200" height="auto"> 
+		<div class="container-lg">
+			<% if (@user == current_user || current_user.admin?) %>
+				<%= link_to "Edit  profile", edit_user_path(@user), class: "btn btn-warning btn-md active"%>
+				<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
+			<% end %>
+		</div>
 	</div>
 
 </div>
