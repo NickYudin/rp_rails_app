@@ -1,0 +1,15 @@
+<div class="text-center">
+	<div class="container-lg">
+		<img class="img-responsive" src=<%= "#{@image.url}" %> >
+	</div>
+	<% if @image.users.any? %>
+		<p class="text text-dark"> Users added this image: </p>
+		<p> <%= render @image.users %> </p>
+	<% end %>
+	<% if !belongs_to_user? %>
+		<%= link_to "add to collection", edit_image_path, class: "btn btn-success btn-lg" %>
+	<% else %>
+		<%= link_to "remove from collection", edit_image_path, class: "btn btn-danger btn-lg" %>
+	<% end %>
+	<%= link_to "Back to all images", images_path,  class: "btn btn-warning"%>
+</div>

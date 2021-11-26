@@ -1,0 +1,8 @@
+<% @images.each do |image| %>
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src=<%= "#{image.url}" %>  alt="Card image cap">
+	  <div class="card-body">
+	     <%= link_to "Go to image", image,  class: "btn btn-warning"%>
+	  </div>
+	</div>
+<% end %>

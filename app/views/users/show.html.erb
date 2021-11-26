@@ -9,6 +9,11 @@
 				<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
 			<% end %>
 		</div>
+		<div class="container-lg">
+			<% @user.images.each do |image| %>
+				<img class="img-responsive" src=<%= "#{image.url}" %>  width="200" height="auto">
+			<% end %>
+		</div>
 	</div>
 
 </div>

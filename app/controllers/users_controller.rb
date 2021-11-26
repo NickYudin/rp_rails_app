@@ -42,7 +42,6 @@ before_action :require_same_user, only: [:edit, :update]
 
 
 	def destroy
-		byebug
 		@user.destroy
 		session[:user_id] =nil if @user != current_user
 		flash[:notice] = "User successfully deleted"
@@ -52,7 +51,7 @@ before_action :require_same_user, only: [:edit, :update]
 	private
 
 	def user_params
-		params.require(:user).permit(:username, :email, :password)
+		params.require(:user).permit(:username, :email, :password, imgage_ids: [])
 	end
 
 	def set_user

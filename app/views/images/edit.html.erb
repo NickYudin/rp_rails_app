@@ -1,0 +1,13 @@
+<% if !belongs_to_user? %>
+	<% current_user.images << @image %>
+	<div class="alert alert-success" role="alert">
+		image added!
+	</div>
+<% else %>
+	<% current_user.images.destroy(@image) %>		
+	<div class="alert alert-success" role="alert">
+		image removed!
+	</div>
+<% end %>
+
+<%= link_to "<< back to images", images_path, class: "btn btn-lg btn-warning"%>
