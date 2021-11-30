@@ -1,17 +1,28 @@
-<div class="container-lg bg-Warning">
+<div class="container-lg bg-warning bg-opacity-75">
 
 	<div class="text-center">
 		<h1 class="display-5 fw-bold mt-5"><%= "#{@user.username}" %>'s profile</h1>
-  		<img class="img-responsive" src="/images/hat.jpg"  width="200" height="auto"> 
+  		<img class="img-responsive" id="ava" src="/images/hat.jpg"  width="200" height="auto"> 
 		<div class="container-lg">
 			<% if (@user == current_user || current_user.admin?) %>
-				<%= link_to "Edit  profile", edit_user_path(@user), class: "btn btn-warning btn-md active"%>
-				<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
+				<%= link_to "Edit  profile", edit_user_path(@user), class: "btn btn-outline-dark btn-md shadow mt-1"%>
+				<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger shadow btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
 			<% end %>
 		</div>
 		<div class="container-lg">
+			<% @user.images.each do |image| %> 
+			<% end %>
+		</div>
+		<div class="container-lg mt-5">
+			<p class= "text-dark fs-4 shadow">
+				<%= @user.username %> loaded this pictures:
+			</p>
+		</div>
+		<div class="grid-container">
 			<% @user.images.each do |image| %>
-				<img class="img-responsive" src=<%= "#{image.url}" %>  width="200" height="auto">
+				<div class="col-md-3 " >
+					<%= image_tag image.url, class: "img-fluid" %>
+				</div>
 			<% end %>
 		</div>
 	</div>

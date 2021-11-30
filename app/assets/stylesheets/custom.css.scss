@@ -10,7 +10,7 @@
 }
 
 .jumbotron {
-	background-image: url('/images/cover.jpeg');
+	background-image: url('/images/cover.jpeg') no-repeat;
 	margin-top: 30px;
 }
 
@@ -72,4 +72,25 @@
 }
   .apple_pagination a:hover, .apple_pagination a:focus {
     text-decoration: underline; 
+}
+
+// css-grid: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+// https://css-tricks.com/snippets/css/complete-guide-grid/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; // for me because I have dt and dd
+  padding: 10px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container > div {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+#ava {
+  border-color: black;  
+  border-radius: 1em;
 }

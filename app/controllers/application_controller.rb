@@ -21,4 +21,7 @@ helper_method :current_user, :logged_in?, :belongs_to_user?
 		current_user.images.ids.include?(@image.id)
 	end
 
+	# def aprooved?
+	# 	@image.aprooved?
+	# end
 end

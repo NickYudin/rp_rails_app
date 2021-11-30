@@ -1,9 +1,17 @@
 <div class="text-center">
-	<div class="container-lg">
-		<img class="img-responsive" src=<%= "#{@image.url}" %> >
+	<% if !@image.accepted %>
+		<%= render 'acception_form' %>
+	<% end %>
+	<div class="container col-md-3 mt-5">
+		<%= image_tag @image.url, class: "img-fluid shadow" %>
 	</div>
+	<% if @image.uploaded_by? %>
+		<div class= "text-dark text-muted">
+			Uploaded by <%= User.find(@image.uploaded_by).username %>
+		</div>
+	<% end %>
 	<% if @image.users.any? %>
-		<p class="text text-dark"> Users added this image: </p>
+		<p class="text text-dark mt-1 fs-5"> Users added this image: </p>
 		<p> <%= render @image.users %> </p>
 	<% end %>
 	<% if !belongs_to_user? %>
