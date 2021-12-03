@@ -2,7 +2,7 @@
 	<% if !@image.accepted %>
 		<%= render 'acception_form' %>
 	<% end %>
-	<div class="container col-md-3 mt-5">
+	<div class="container col-md-3 mt-5 shadow">
 		<%= image_tag @image.url, class: "img-fluid shadow" %>
 	</div>
 	<% if @image.uploaded_by? %>
@@ -16,13 +16,15 @@
 	<% end %>
 	<div class="grid-container ">
 		<div>
-			<% if !belongs_to_user? %>
-				<%= button_to [:add_image], class: "btn btn-success shadow btn-lg" do%>
-					add to collection
-				<% end %>
-			<% else %>
-				<%= button_to [:rmv_image], class: "btn btn-danger shadow btn-lg" do%>
-					remove from collection
+			<% if current_user && @image.accepted? %>
+				<% if !belongs_to_user? %>
+					<%= button_to [:add_image], class: "btn btn-success shadow btn-lg" do%>
+						add to collection
+					<% end %>
+				<% else %>
+					<%= button_to [:rmv_image], class: "btn btn-danger shadow btn-lg" do%>
+						remove from collection
+					<% end %>
 				<% end %>
 			<% end %>
 		</div>

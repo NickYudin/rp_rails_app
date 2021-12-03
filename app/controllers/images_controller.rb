@@ -37,8 +37,18 @@ class ImagesController < ApplicationController
 
 	def add_image
 		current_user.images << @image
-		flash[:notice] = "Image added!"
+		flash[:notice] = "Image added to collection!"
 		redirect_to @image
+	end
+
+	def rmv_image
+		current_user.images.destroy(@image)
+		flash[:alert] = "Image removed from collection!"
+		redirect_to @image
+	end
+
+	def can_accept_images?
+		is_admin? || is_publisher?
 	end
 
 	private

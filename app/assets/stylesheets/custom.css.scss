@@ -81,7 +81,7 @@
 // https://css-tricks.com/snippets/css/complete-guide-grid/
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto; // for me because I have dt and dd
+  grid-template-columns: auto auto auto auto; 
   padding: 10px;
   text-align: left;
   justify-content: center;
@@ -89,7 +89,7 @@
 }
 
 .grid-container > div {
-  padding: 20px;
+  padding: 5px;
   margin-left: 20px;
 }
 

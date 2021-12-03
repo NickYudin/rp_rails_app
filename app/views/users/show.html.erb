@@ -1,30 +1,39 @@
-<div class="container-lg bg-warning bg-opacity-75">
+<div class="container-lg bg-warning bg-opacity-75 rounded p-3 mt-3">
 
-	<div class="text-center">
-		<h1 class="display-5 fw-bold mt-5"><%= "#{@user.username}" %>'s profile</h1>
-  		<img class="img-responsive" id="ava" src="/images/hat.jpg"  width="200" height="auto"> 
-		<div class="container-lg">
-			<% if (@user == current_user || current_user.admin?) %>
-				<%= link_to "Edit  profile", edit_user_path(@user), class: "btn btn-outline-dark btn-md shadow mt-1"%>
-				<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger shadow btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
-			<% end %>
-		</div>
-		<div class="container-lg">
-			<% @user.images.each do |image| %> 
-			<% end %>
-		</div>
-		<div class="container-lg mt-5">
-			<p class= "text-dark fs-4 shadow">
-				<%= @user.username %> loaded this pictures:
-			</p>
-		</div>
+		<h1 class="display-5 shadow text-center fw-bold mt-5"><%= "#{@user.username}" %>'s profile</h1>
 		<div class="grid-container">
-			<% @user.images.each do |image| %>
-				<div class="col-md-3 " >
-					<%= image_tag image.url, class: "img-fluid" %>
-				</div>
-			<% end %>
+  		<img class="img-responsive shadow m-2" id="ava" src="/images/hat.jpg"  width="310" height="auto"> 
+			<div class="container-fluid">
+				<% if (@user == current_user || current_user.admin?) %>
+					<%= link_to "Edit  profile", edit_user_path(@user), class: "btn btn-outline-dark btn-md shadow m-3"%>
+					<%= link_to "Delete profile", current_user, class: "btn btn-outline-danger shadow btn-sm", method: :delete, data: {confirm: "Are you sure?"}%>
+				<% end %>
+			</div>
+			<div class="container-lg">
+				<% @user.images.each do |image| %> 
+				<% end %>
+			</div>
 		</div>
-	</div>
-
+		<div class="container-fluid">
+			<p class= "text-dark text-center fs-4 shadow col-md-3 bg-light mt-3">
+				
+				 <%= @user.username %>'s collection:
+			
+			</p>
+			<div class="grid-container bg-light p-0">
+				<% if current_user == @user %>
+					<% @user.images.each do |image| %>
+						<div class="p-2">
+							<%= image_tag image.url, class: "img-fluid" %>
+						</div>
+					<% end %>
+				<% else %>
+					<% @user.images.accepted.each do |image| %>
+						<div class="p-2">
+							<%= image_tag image.url, class: "img-fluid" %>
+						</div>
+					<% end %>
+				<% end %>
+			</div>
+		</div>
 </div>

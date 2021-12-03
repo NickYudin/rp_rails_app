@@ -1,1 +1,5 @@
+<% if current_user %>
 	<%= link_to user.username, user, class: "link link-dark fs-8 mt-1 mr-2"%> 
+<% else %>
+	<%= user.username %>
+<% end %>
