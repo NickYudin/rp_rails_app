@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 
 	has_and_belongs_to_many :images, join_table: 'users_images'
+	belongs_to  :role
 
 	before_save {self.email = email.downcase}
 	

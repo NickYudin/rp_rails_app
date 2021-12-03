@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 	get 'login', to: 'sessions#new'
 	post 'login', to: 'sessions#create'
 	delete 'logout', to: 'sessions#destroy' 
-	resources :images
+	resources :images 
+	post 'images/:id/accept_image' => 'images#accept_image', as: 'accept_image'
+	post 'images/:id/add_image' => 'images#add_image', as: 'add_image'
+	post 'images/:id/rmv_image' => 'images#rmv_image', as: 'rmv_image' 
+	resources :roles
 
 end

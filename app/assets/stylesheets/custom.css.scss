@@ -10,7 +10,7 @@
 }
 
 .jumbotron {
-	background-image: url('/images/cover.jpeg') no-repeat;
+	background-image: url('/images/cover.jpeg');
 	margin-top: 30px;
 }
 
@@ -19,16 +19,19 @@
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border: 1px;
     border-color: white;
     width: 100%;
     height: 120 px;
-    line-height: 120px;
     background-color: black;
     flex-srink: none;
     position: bottom;
+}
+
+#rip {
+  font-size: 0.5rem;
 }
 
 .body {

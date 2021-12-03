@@ -1,18 +1,23 @@
 <div class="grid-container">
-
-	<div>
-		<% if current_user.admin? && image.non_accepted %>
-		
-		<% end %>
+	<div class="text shadow text-dark bg-secondary bg-opacity-50">
+		waiting for aproove >>
 	</div>
-	<% @images.each do |image| %>
+	<% @images.draft.each do |image|%>
 		<div class="card shadow" style="width: 18rem;">
-			<% if image.accepted %>
-				<%= image_tag image.url, class: "img-fluid shadow" if image.url? %>
-					<div class="card-body text-center">
-				    	<%= link_to "Go to image", image,  class: "btn btn-warning shadow"%>
-					</div>
-			<% end %>
+			<%= image_tag image.url, class: "img-fluid shadow" if image.url? %>
+				<div class="card-body text-center">
+			    	<%= link_to "Go to image", image,  class: "btn btn-secondary shadow"%>
+			</div>
+		</div>
+	<% end %>
+</div>
+<div class="grid-container">
+	<% @images.accepted.each do |image| %>
+		<div class="card shadow" style="width: 18rem;">
+			<%= image_tag image.url, class: "img-fluid shadow" if image.url? %>
+				<div class="card-body text-center">
+			    	<%= link_to "Go to image", image,  class: "btn btn-warning shadow"%>
+				</div>
 		</div>
 	<% end %>
 </div>

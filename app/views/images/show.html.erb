@@ -14,10 +14,19 @@
 		<p class="text text-dark mt-1 fs-5"> Users added this image: </p>
 		<p> <%= render @image.users %> </p>
 	<% end %>
-	<% if !belongs_to_user? %>
-		<%= link_to "add to collection", edit_image_path, class: "btn btn-success btn-lg" %>
-	<% else %>
-		<%= link_to "remove from collection", edit_image_path, class: "btn btn-danger btn-lg" %>
-	<% end %>
-	<%= link_to "Back to all images", images_path,  class: "btn btn-warning"%>
+	<div class="grid-container ">
+		<div>
+			<% if !belongs_to_user? %>
+				<%= button_to [:add_image], class: "btn btn-success shadow btn-lg" do%>
+					add to collection
+				<% end %>
+			<% else %>
+				<%= button_to [:rmv_image], class: "btn btn-danger shadow btn-lg" do%>
+					remove from collection
+				<% end %>
+			<% end %>
+		</div>
+		<div>
+			<%= link_to "Back to all images", images_path,  class: "btn shadow btn-warning"%>
+		</div>
 </div>

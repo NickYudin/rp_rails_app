@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-helper_method :current_user, :logged_in?, :belongs_to_user?
+helper_method :current_user, :logged_in?, :belongs_to_user?#, :accept_image
 
 	def current_user
 		@current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -21,7 +21,12 @@ helper_method :current_user, :logged_in?, :belongs_to_user?
 		current_user.images.ids.include?(@image.id)
 	end
 
-	# def aprooved?
-	# 	@image.aprooved?
+
+	# def accept_image
+	# 	@image.accepted = true
+	# 	@image.save
+	# 	flash[:notice] = "Image accepted!"
+	# 	redirect_to @image
 	# end
+
 end

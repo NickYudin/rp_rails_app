@@ -1,13 +1,14 @@
 class ImagesController < ApplicationController
 
-before_action :set_image, only: [:show, :edit, :update, :belongs_to_user?]
+	before_action :set_image, only: [:show, :edit, :update, :belongs_to_user?, :accept_image, :add_image]
+
 
 	def new
 
 	end
 
 	def index
-		@images = Image.accepted.all
+		@images = Image.all
 	end
 
 	def show
@@ -25,6 +26,19 @@ before_action :set_image, only: [:show, :edit, :update, :belongs_to_user?]
 		else
 			render "image_path"
 		end
+	end
+
+	def accept_image
+		@image.accepted = true
+		@image.save
+		flash[:notice] = "Image accepted!"
+		redirect_to @image
+	end
+
+	def add_image
+		current_user.images << @image
+		flash[:notice] = "Image added!"
+		redirect_to @image
 	end
 
 	private
